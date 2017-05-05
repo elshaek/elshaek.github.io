@@ -1,1 +1,66 @@
-body {background:blue}
+body {
+	font-family: "Verdana", serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background: radial-gradient(circle, #fb7828, #ee5b32);
+	padding: 60px 10px 5px;
+	max-width: 100%;
+	box-shadow: 0px 1px 1px #888888;
+	color: white;
+}
+
+nav:not(#footernav)	{
+	float: right;
+}
+
+ul > li {	
+	display: inline;
+	list-style-type: none;
+	font-size: 1.5em;
+	border-left: 1px solid white;
+	//margin: 10px;
+	padding: 3px 10px;
+}
+
+.topnavlink {
+	color: white;
+}
+
+.bannerlist:hover {
+	background-color: #e15803;
+}
+
+a {
+	text-decoration:none;
+	color: #0085d8;
+}
+
+a:visited:not(.topnavlink, .bottomnavlink) { 
+    color: lightblue;
+}
+
+h1 {
+	font-family: "Courier", sans-serif;
+	display: inline;
+	font-size: 300%;
+	font-weight: normal;
+	margin-left: 5px;
+}
+
+main {
+    width: 70%;
+    padding: 30px 50px
+}
+
+form {
+	padding: 50px
+}
+
+footer {
+  	padding: 8px;
+  	background-color: #efefef;
+  	text-align: center;
+}
