@@ -167,7 +167,6 @@ footer {
 	.bannerlist {	
 		font-size: 0.9em;
 		padding: 0px 15px;
-		border: none;
 	}
 
 	#main-content {
@@ -262,7 +261,7 @@ footer {
 	}
 
 	input, textarea {
-		width: 100%;
+		width: 95%;
 	}
 
 	button {
