@@ -250,7 +250,7 @@ footer {
 
 	#main-content {
 	    margin: 0px;
-	    width: 80%;
+	    width: 89%;
 	    min-height: 0px;
 	    border: none;
 	    padding: 20px;
@@ -263,5 +263,14 @@ footer {
 
 	input, textarea {
 		width: 100%;
+	}
+
+	button {
+		background-color: lightgrey;
+	}
+
+	button:hover {
+		background: none ;
+		color: black;
 	}
 }
