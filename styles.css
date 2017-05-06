@@ -1,5 +1,6 @@
 body {
 	font-family: "Verdana", sans-serif;
+	background-color: white;
 	margin: 0;
 	padding: 0;
 }
@@ -7,7 +8,6 @@ body {
 body::before {
 	content: "";
 	background-image: url("Prismatic-Polka-Dots-Mark-II-2-No-Background-2400px.png");
-	background-color: white;
 	background-size: cover;
   	opacity: 0.3;
   	position: fixed;
@@ -35,7 +35,12 @@ h1 {
 }
 
 #bannernav	{
+	display: inline;
 	float: right;
+}
+
+#bannernav > ul	{
+	margin-left: -30px;
 }
 
 .bannerlist {	
@@ -74,7 +79,7 @@ a:visited:not(.bannerlink) {
     float: left;
     background-color: white;
     border: 10px solid #f7f7f7;
-    margin: -10px 10px 30px 10%;
+    margin: -10px 10px 10px 10%;
     padding: 10px 20px 10px
 }
 
@@ -126,6 +131,7 @@ input {
 
 textarea {
 	width: 80%;
+	border: 1px solid black;
 }
 
 button {
@@ -151,13 +157,23 @@ footer {
 
 @media screen and (max-width: 885px) {
 	header {
-		padding: 10px 10px 10px;
+		padding: 20px 10px 15px;
+	}
+
+	h1 {
+		font-size: 200%;
+	}
+
+	.bannerlist {	
+		font-size: 0.9em;
+		padding: 0px 15px;
+		border: none;
 	}
 
 	#main-content {
 	    display: block;
 	    margin: -10px 10% 20px;
-	    width: 75%;
+	    width: 70%;
 	    min-height: 300px;
 	}
 
@@ -168,8 +184,84 @@ footer {
 	    border: none;
 	    background-color: #f7f7f7;
 	}
+
+	.social-list {
+		padding-bottom: 5px;
+		margin-left: -40px;
+	}
 } 
 
-@media screen and (max-width: 713px) {
+@media screen and (max-width: 520px) {
+	header {
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+		width: 100%;
+		box-shadow: none;
+	}
 
+	h1 {
+		display: none;
+	}
+
+	#bannernav	{
+		font-family: "Courier", sans-serif;
+		font-size: 80%;
+		width: 100%;
+		display: block;
+		background-color: #e2dcdc;
+		padding: 0px;
+	}
+
+	#bannernav > ul {
+		display: table;
+		width: 100%;
+		margin: 0px 0px 0px -40px;
+	}
+
+	.bannerlist {	
+		display: table-cell;
+		width: 33.33%;
+		color: black;
+	}
+
+	.bannerlist:hover {
+		background-color: none;
+	}
+
+	#current {
+		background: #ee5b32;
+	}
+
+	#current > .bannerlink {
+		color: white;
+	}
+
+	.bannerlink {
+		display: block;
+		color: black;
+		font-size: 150%;
+		padding: 10px 0px;
+	}
+
+	body::before {
+		background-image: none;
+	}
+
+	#main-content {
+	    margin: 0px;
+	    width: 80%;
+	    min-height: none;
+	    border: none;
+	    padding: 20px;
+	}
+
+	figure > img {
+		width: 90%;
+		height: 90%;
+	}
+
+	input, textarea {
+		width: 100%;
+	}
 }
