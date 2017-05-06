@@ -7,13 +7,15 @@ body {
 body::before {
 	content: "";
 	background-image: url("Prismatic-Polka-Dots-Mark-II-2-No-Background-2400px.png");
+	background-color: white;
+	background-size: cover;
   	opacity: 0.3;
   	position: fixed;
   	top: 0;
   	left: 0;
   	bottom: 0;
   	right: 0;
-  	z-index: -1;   
+  	z-index: -1; 
 }
 
 header {
@@ -67,14 +69,13 @@ a:visited:not(.bannerlink) {
 
 #main-content {
     display: inline-block;
-    max-width: 60%;
+    width: 60%;
     min-height: 500px;
     float: left;
     background-color: white;
     border: 10px solid #f7f7f7;
     margin: -10px 10px 30px 10%;
     padding: 10px 20px 10px
-
 }
 
 #main-content > figure	{
@@ -91,7 +92,7 @@ figcaption {
 #socialnav {
 	display: inline-block;
 	vertical-align: top;
-	width: 13%;
+	min-width: 170px;
 	float: left;
 	border: 10px solid #f7f7f7;
     margin: -10px 0px;
@@ -120,6 +121,11 @@ label, input {
 input {
 	border: 1px solid black;
 	height: 1.6em;
+	width: 50%;
+}
+
+textarea {
+	width: 80%;
 }
 
 button {
@@ -138,8 +144,32 @@ button:hover {
 footer {
 	width: 100%;
 	clear: both;
-  	padding: 5px 0px;
-  	background-color: #efefef;
+  	padding: 15px 0px;
   	text-decoration: underline;
   	text-align: center;
+}
+
+@media screen and (max-width: 885px) {
+	header {
+		padding: 10px 10px 10px;
+	}
+
+	#main-content {
+	    display: block;
+	    margin: -10px 10% 20px;
+	    width: 75%;
+	    min-height: 300px;
+	}
+
+	#socialnav {
+		display: block;
+	    width: 100%;
+	    text-align: center;
+	    border: none;
+	    background-color: #f7f7f7;
+	}
+} 
+
+@media screen and (max-width: 713px) {
+
 }
