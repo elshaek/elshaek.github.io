@@ -270,7 +270,7 @@ footer {
 	}
 
 	button:hover {
-		background: none ;
+		background-color: lightgrey;
 		color: black;
 	}
 }
