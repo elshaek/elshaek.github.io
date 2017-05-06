@@ -5,9 +5,9 @@ body {
 }
 
 body::before {
-	content: url("Prismatic-Polka-Dots-Mark-II-2-No-Background-2400px.png");
-	//background: url("Prismatic-Polka-Dots-Mark-II-2-No-Background-2400px.png");
-  	opacity: 0.2;
+	content: "";
+	background-image: url("Prismatic-Polka-Dots-Mark-II-2-No-Background-2400px.png");
+  	opacity: 0.3;
   	position: fixed;
   	top: 0;
   	left: 0;
@@ -18,26 +18,33 @@ body::before {
 
 header {
 	background: radial-gradient(circle, #fb7828, #ee5b32);
-	padding: 60px 10px 5px;
+	padding: 60px 10px 15px;
 	max-width: 100%;
 	box-shadow: 0px 1px 1px #888888;
 	color: white;
 }
 
-nav:not(#footernav)	{
+h1 {
+	font-family: "Courier", sans-serif;
+	display: inline;
+	font-size: 300%;
+	font-weight: normal;
+	margin-left: 5px;
+}
+
+#bannernav	{
 	float: right;
 }
 
-ul > li {	
+.bannerlist {	
 	display: inline;
 	list-style-type: none;
 	font-size: 1.3em;
 	border-left: 1px solid white;
-	//margin: 10px;
 	padding: 5px 40px 10px;
 }
 
-.topnavlink {
+.bannerlink {
 	color: white;
 }
 
@@ -50,29 +57,89 @@ a {
 	color: #0085d8;
 }
 
-a:visited:not(.topnavlink, .bottomnavlink) { 
-    color: lightblue;
+a:hover:not(.bannerlink) {
+	color: #ee5b32;
 }
 
-h1 {
-	font-family: "Courier", sans-serif;
-	display: inline;
-	font-size: 300%;
-	font-weight: normal;
-	margin-left: 5px;
+a:visited:not(.bannerlink) { 
+    color: #ADD8E6;
 }
 
-main {
-    width: 70%;
-    //padding: 30px 50px
+#main-content {
+    display: inline-block;
+    max-width: 60%;
+    min-height: 500px;
+    float: left;
+    background-color: white;
+    border: 10px solid #f7f7f7;
+    margin: -10px 10px 30px 10%;
+    padding: 10px 20px 10px
+
+}
+
+#main-content > figure	{
+	margin: 0px;
+	text-align: center;
+}
+
+
+figcaption {
+	font-size: 80%;
+	font-style: italic;
+}
+
+#socialnav {
+	display: inline-block;
+	vertical-align: top;
+	width: 13%;
+	float: left;
+	border: 10px solid #f7f7f7;
+    margin: -10px 0px;
+    background: white;
+}
+
+.social-list {
+	list-style-type: none;
+	padding-bottom: 5px;
 }
 
 form {
-	padding: 50px
+	padding-top: 50px;
+}
+
+label, input {
+	display: block;
+	padding-bottom: 5px;
+	width: 300px;
+}
+
+.form-input {
+	margin-top: 15px
+}
+
+input {
+	border: 1px solid black;
+	height: 1.6em;
+}
+
+button {
+	font-size: 1em;
+	margin: 10px 10px 10px 0px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #888888;
+	border: 0px;
+}
+
+button:hover {
+	background-color: #e15803;
+	color: white;
 }
 
 footer {
-  	padding: 8px;
+	width: 100%;
+	clear: both;
+  	padding: 5px 0px;
   	background-color: #efefef;
+  	text-decoration: underline;
   	text-align: center;
 }
