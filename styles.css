@@ -226,7 +226,7 @@ footer {
 	}
 
 	.bannerlist:hover {
-		background-color: none;
+		background: none;
 	}
 
 	#current {
@@ -251,7 +251,7 @@ footer {
 	#main-content {
 	    margin: 0px;
 	    width: 80%;
-	    min-height: none;
+	    min-height: 0px;
 	    border: none;
 	    padding: 20px;
 	}
