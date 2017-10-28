@@ -1,39 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-	<title>Elsha E. Kwee</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Elsha E. Kwee</title>
+  <link rel="shortcut icon" href="favicon.ico"/>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 <body>
-	<header>
-		<h1>Elsha E. Kwee</h1>
-		<nav id="bannernav">
-			<ul>
-				<li id="current" class="bannerlist"><a class="bannerlink" href="index.html">Home</a></li
-				><li class="bannerlist"><a class="bannerlink" href="about.html">About</a></li
-				><li class="bannerlist"><a class="bannerlink" href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<main>
-		<div id="main-content">
-			<p>I had recently left my position as an Associate at <a href="https://www.cyberagentventures.com/en/">CyberAgent Ventures</a> to start a new journey at <a href="https://devbootcamp.com/">Dev Bootcamp</a>.</p>
-			<p>This site is created as part of the learning process during Week 2 and Week 3 at DBC.</p>
-			<p><a href="http://www.hexahedria.com/">Here</a> is a website with a similar topic/purpose. It definitely looks a lot better in terms of design and layout, considering this page only has HTML.</p>
-		</div>
-		<aside>
-			<nav id="socialnav">
-				<ul>
-					<li class="social-list"><a class="social-links" href="https://www.linkedin.com/in/elshakwee/">Linkedin</a></li
-					><li class="social-list"><a class="social-links" href="https://github.com/elshaek">GitHub</a></li
-					><li class="social-list"><a class="social-links" href="https://www.facebook.com/elsha">Facebook</a></li>
-				</ul>
-			</nav>
-		</aside>
-	</main>
-	<footer><a href="#top" title="back to top">Top</a></footer>
+  <header>
+    <h1>Elsha E. Kwee</h1>
+  </header>
+  <body>
+    <div id="main-content">
+      <nav id="socialnav">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/elshakwee/" target="_blank">LinkedIn</a> / </li>
+          <li><a href="https://github.com/elshaek" target="_blank">Github</a> / </li>
+          <li><a href="https://www.facebook.com/elsha" target="_blank">Facebook</a> / </li>
+          <li><a href="" data-toggle="modal" data-target="#resumeModal">Resume</a></li>
+        </ul>
+      </nav>
+
+      <ul>
+          <li>Lived in Singapore, Seattle, Osaka, San Francisco.</li>
+          <li>Living in Jakarta.</li>
+          <li>Speaks Indonesian, English, Mandarin, Hokkien, basic Japanese, Ruby, JavaScript.</li>
+          <li>A <a href="" data-toggle="modal" data-target="#myModal">dog</a> person.</li>
+          <li>Was an Associate at <a href="https://www.cyberagentventures.com/en/" target="_blank">CyberAgent Ventures Indonesia</a>.</li>
+          <li>Left to pursue dream of becoming a developer by attending <a href="https://devbootcamp.com/" target="_blank">Dev Bootcamp</a> in San Francisco.</li>
+          <li>Collector of LEGO sets, pottery, postcards, and Starbucks cards.</li>
+          <li>Optimistic about the future of blockchain technology and decentralized systems.</li>
+          <li>Future goals: becoming an awesome developer, and being more involved in blockchain.</li>
+      </ul>
+    </div>
+
+
+    <!-- Resume Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <embed src="ElshaKwee_Resume.pdf" width="849" height="1200" type="application/pdf"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+          <img class="rounded" src="my_dogs.jpg" alt="my two dogs"/>
+        </div>
+      </div>
+    </div>
+
+    <img id="myImg" src="transparent_cartoony_me.png" alt="Cartoony Me">
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 </body>
 </html>

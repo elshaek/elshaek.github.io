@@ -1,275 +1,81 @@
 body {
-	font-family: "Verdana", sans-serif;
-	background-color: white;
-	margin: 0;
-	padding: 0;
+  background-color: FloralWhite; /*SeaShell, Snow*/
+  font-size: 16px;
+  font-family: verdana, arial, sans-serif;
 }
 
-body::before {
-	content: "";
-	background-image: url("Prismatic-Polka-Dots-Mark-II-2-No-Background-2400px.png");
-	background-size: cover;
-  	opacity: 0.3;
-  	position: fixed;
-  	top: 0;
-  	left: 0;
-  	bottom: 0;
-  	right: 0;
-  	z-index: -1; 
+#myImg {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 45%;
 }
 
-header {
-	background: radial-gradient(circle, #fb7828, #ee5b32);
-	padding: 60px 10px 15px;
-	max-width: 100%;
-	box-shadow: 0px 1px 1px #888888;
-	color: white;
+.close {
+  margin-right: -20px;
+  margin-top: 5px;
+  color: white;
+}
+
+@font-face {
+  font-family: polya;
+  src: url(POLYA.otf);
 }
 
 h1 {
-	font-family: "Courier", sans-serif;
-	display: inline;
-	font-size: 300%;
-	font-weight: normal;
-	margin-left: 5px;
-}
-
-#bannernav	{
-	display: inline;
-	float: right;
-}
-
-#bannernav > ul	{
-	margin-left: -30px;
-}
-
-.bannerlist {	
-	display: inline;
-	list-style-type: none;
-	font-size: 1.3em;
-	border-left: 1px solid white;
-	padding: 5px 40px 10px;
-}
-
-.bannerlink {
-	color: white;
-}
-
-.bannerlist:hover {
-	background-color: #e15803;
-}
-
-a {
-	text-decoration:none;
-	color: #0085d8;
-}
-
-a:hover:not(.bannerlink) {
-	color: #ee5b32;
-}
-
-a:visited:not(.bannerlink) { 
-    color: #ADD8E6;
-}
-
-#main-content {
-    display: inline-block;
-    width: 60%;
-    min-height: 500px;
-    float: left;
-    background-color: white;
-    border: 10px solid #f7f7f7;
-    margin: -10px 10px 10px 10%;
-    padding: 10px 20px 10px
-}
-
-#main-content > figure	{
-	margin: 0px;
-	text-align: center;
-}
-
-
-figcaption {
-	font-size: 80%;
-	font-style: italic;
+  font-family: polya;
+  color: #F26C4F;
+  font-size: 110px;
+  margin-top: 20px;
+  margin-left: 80px;
 }
 
 #socialnav {
-	display: inline-block;
-	vertical-align: top;
-	min-width: 170px;
-	float: left;
-	border: 10px solid #f7f7f7;
-    margin: -10px 0px;
-    background: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  margin-left: -10px;
 }
 
-.social-list {
-	list-style-type: none;
-	padding-bottom: 5px;
+#socialnav li{
+  display: inline-block;
 }
 
-form {
-	padding-top: 50px;
+#socialnav li a {
+  display: inline-block;
+  padding: 0px 10px;
 }
 
-label, input {
-	display: block;
-	padding-bottom: 5px;
-	width: 300px;
+#socialnav li a:hover {
+  /*opacity: 0.5;*/
+  color: #F26C4F;
+  text-decoration: none;
+  /*transform: translate3d(0, -50%, 0);*/
+  transform: rotateX(180deg) rotateX(180deg);
+  background-color: #E9F2F9;
 }
 
-.form-input {
-	margin-top: 15px
+a {
+  color: #3A89C9;
 }
 
-input {
-	border: 1px solid black;
-	height: 1.6em;
-	width: 50%;
+a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-textarea {
-	width: 80%;
-	border: 1px solid black;
+#main-content {
+  margin-left: 45px;
+  width: 55%;
 }
 
-button {
-	font-size: 1em;
-	margin: 10px 10px 10px 0px;
-	border-radius: 5px;
-	box-shadow: 1px 1px 1px #888888;
-	border: 0px;
+li {
+ list-style-type: none;
+ margin-top: 12px;
 }
 
-button:hover {
-	background-color: #e15803;
-	color: white;
-}
-
-footer {
-	width: 100%;
-	clear: both;
-  	padding: 15px 0px;
-  	text-decoration: underline;
-  	text-align: center;
-}
-
-@media screen and (max-width: 885px) {
-	header {
-		padding: 20px 10px 15px;
-	}
-
-	h1 {
-		font-size: 200%;
-	}
-
-	.bannerlist {	
-		font-size: 0.9em;
-		padding: 0px 15px;
-	}
-
-	#main-content {
-	    display: block;
-	    margin: -10px 10% 20px;
-	    width: 70%;
-	    min-height: 300px;
-	}
-
-	#socialnav {
-		display: block;
-	    width: 100%;
-	    text-align: center;
-	    border: none;
-	    background-color: #f7f7f7;
-	}
-
-	.social-list {
-		padding-bottom: 5px;
-		margin-left: -40px;
-	}
-} 
-
-@media screen and (max-width: 520px) {
-	header {
-		margin: 0px;
-		padding: 0px;
-		text-align: center;
-		width: 100%;
-		box-shadow: none;
-	}
-
-	h1 {
-		display: none;
-	}
-
-	#bannernav	{
-		font-family: "Courier", sans-serif;
-		font-size: 80%;
-		width: 100%;
-		display: block;
-		background-color: #e2dcdc;
-		padding: 0px;
-	}
-
-	#bannernav > ul {
-		display: table;
-		width: 100%;
-		margin: 0px 0px 0px -40px;
-	}
-
-	.bannerlist {	
-		display: table-cell;
-		width: 33.33%;
-		color: black;
-	}
-
-	.bannerlist:hover {
-		background: none;
-	}
-
-	#current {
-		background: #ee5b32;
-	}
-
-	#current > .bannerlink {
-		color: white;
-	}
-
-	.bannerlink {
-		display: block;
-		color: black;
-		font-size: 150%;
-		padding: 10px 0px;
-	}
-
-	body::before {
-		background-image: none;
-	}
-
-	#main-content {
-	    margin: 0px;
-	    width: 89%;
-	    min-height: 0px;
-	    border: none;
-	    padding: 20px;
-	}
-
-	figure > img {
-		width: 90%;
-		height: 90%;
-	}
-
-	input, textarea {
-		width: 95%;
-	}
-
-	button {
-		background-color: lightgrey;
-	}
-
-	button:hover {
-		background-color: lightgrey;
-		color: black;
-	}
+#resumeModal .modal-content{
+  width: 110%;
 }
