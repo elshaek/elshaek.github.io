@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: elshaek.github.io
+Token: b1084a7217dde64975cf02333999915c66d86b5486f027ec5a2e38828d271ecf
