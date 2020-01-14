@@ -1,75 +1,273 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-  <title>Elsha E. Kwee</title>
-  <link rel="shortcut icon" href="favicon.ico"/>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Website Title -->
+    <title>Elsha E. Kwee</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font-Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Lightbox -->
+	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- Text Rotator-->
+	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+	<!-- FlexSlider -->
+    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
+	<!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+	<!-- Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+	<!-- Custom Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="assets/html5shiv/html5shiv.js"></script>
+    <script src="assets/respond/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <body id="top">
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-
-</head>
-<body>
-  <header>
-    <h1>Elsha E. Kwee</h1>
-  </header>
-  <body>
-    <div id="main-content">
-      <nav id="socialnav">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/elshakwee/" target="_blank">LinkedIn</a> / </li>
-          <li><a href="https://github.com/elshaek" target="_blank">Github</a> / </li>
-          <li><a href="https://www.facebook.com/elsha" target="_blank">Facebook</a> / </li>
-          <li><a href="" data-toggle="modal" data-target="#resumeModal">Resume</a></li>
-        </ul>
-      </nav>
-
-      <ul>
-          <li>Lived in Singapore, Seattle, Osaka, San Francisco.</li>
-          <li>Living in Jakarta.</li>
-          <li>Speaks Indonesian, English, Mandarin, Hokkien, basic Japanese, Ruby, JavaScript.</li>
-          <li>A <a href="" data-toggle="modal" data-target="#myModal">dog</a> person.</li>
-          <li>Was an Associate at <a href="https://www.cyberagentventures.com/en/" target="_blank">CyberAgent Ventures Indonesia</a>.</li>
-          <li>Left to pursue dream of becoming a developer by attending <a href="https://devbootcamp.com/" target="_blank">Dev Bootcamp</a> in San Francisco.</li>
-          <li>Collector of LEGO sets, pottery, postcards, and Starbucks cards.</li>
-          <li>Optimistic about the future of blockchain technology and decentralized systems.</li>
-          <li>Future goals: becoming an awesome developer, and being more involved in blockchain.</li>
-      </ul>
-    </div>
+      <!-- ****************************** Preloader ************************** -->
+      <div id="preloader"></div>
 
 
-    <!-- Resume Modal -->
-    <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <embed src="ElshaKwee_Resume.pdf" width="849" height="1200" type="application/pdf"/>
+	  	<!-- ==========================
+        HEADER SECTION 
+        =========================== -->
+        <header id="home">
+		    <!-- creative menu -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="menu-wrap">
+				<nav class="menu">
+				    <!-- Menu Links -->
+					<div class="icon-list">
+						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+						<a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+						<a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+					</div>
+				</nav>
+			    </div>
+			    <button class="menu-button" id="open-button"></button><!-- menu button -->
+              </div><!--/row-->
+            </div><!--/container-->
+		  <!-- Header Image -->
+          <section class="hero" id="hero">
+            <div class="container">
+			  <!-- Slider Button (don't edit!)-->
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                </div>
+              </div>
+			  <!-- HEADER HEADLINE -->
+              <div class="row">
+                <div class="col-md-8 col-md-offset-1 inner">
+                  <h1 class="animated fadeInDown">
+                    <span style="color:#E04343;">E</span>lsha<br/>
+                    <span style="color:#000080;">E. </span><span>Kw<span style="color:#FFE800">ee</span></span>
+                  </h1><!-- Title -->
+                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Aspiring Product Person,Casual Coder,Blockchain Enthusiast</span></h3><!-- Text Rotator -->
+                </div>
+              </div>
+			  <!-- Learn More Button -->
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+			            <p>SEE MORE</p>
+			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
+			        </a>
+                </div>
+              </div>
+            </div>
+          </section>
+		  <!-- Header Image End -->
+        </header>
+		<!-- ==========================
+        HEADER SECTION END  
+        =========================== -->
+		
+		
+		
+		
+		<!-- ==========================
+        ABOUT SECTION  
+        =========================== -->
+        <section class="intro text-center section-padding color-bg" id="about">
+          <div class="container">
+		    <!-- WELCOME TEXT -->
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
+				<!-- about / welcome text -->
+                <p>I am a curious person who is on a journey to discover myself, with aspirations to be a lifelong learner. I love my <a href="my_dogs.jpg" target="_blank">two dogs</a>, my LEGO collection, and am currently preoccupied with improving my product management skills.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+		<!-- ==========================
+        ABOUT SECTION END
+        =========================== -->	
+
+
+
+<!-- ==========================
+        MORE ABOUT SECTION 
+        =========================== -->
+        <section class="features text-center section-padding" id="services">
+          <div class="container">
+        <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">More about me</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+          <div class="services">
+          <!-- Service Box 1 -->
+                  <div class="col-md-4 wp2 item">
+                    <div class="icon">
+                      <i class="fa fa-adjust"></i><!-- Icon -->
+                    </div>
+                    <h2>Aspiring Product Person</h2><!-- Title -->
+                    <p>Became interested in Product during my role as a Software Engineer. Currently in the process of 
+                      deepening <a href="https://www.scrum.org/user/607763" target="_blank">my knowledge on Scrum</a>, an agile process framework.</p><!-- Description -->
+                  </div>
+          <!-- Service Box 2 -->
+                  <div class="col-md-4 wp2 item delay-05s">
+                    <div class="icon">
+                      <i class="fa fa-cubes"></i><!-- Icon -->
+                    </div>
+                    <h2>Blockchain Enthusiast</h2><!-- Title -->
+                    <p>Always optimistic about blockchain, especially Ethereum. Gained familiarity with foundational Ethereum concepts 
+                      and smart contracts through <a href="https://consensys.net/academy/bootcamp/" target="_blank">ConsenSys Academy 
+                        Developer Bootcamp</a></p><!-- Description -->
+                  </div>
+          <!-- Service Box 3 -->
+                  <div class="col-md-4 wp2 item delay-1s">
+                    <div class="icon">
+                      <i class="fa fa-code"></i><!-- Icon -->
+                    </div>
+                    <h2>Casual Coder</h2><!-- Title -->
+                    <p>Attended Dev Bootcamp, a 19-week intensive, in-person program for full-stack web development in San Francisco, 
+                      worked as a software engineer at a Financial Technology company for a year, and now 
+                      <a href="https://github.com/elshaek" target="blank">coding</a> and practicing on my free time.</p><!-- Description -->
+                  </div>
+          </div>
+                  <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+		<!-- ==========================
+        MORE ABOUT SECTION END
+        =========================== -->	
+			
+		<!-- ==========================
+        CUSTOM SPACER
+        =========================== -->
+		<div class="spacer-cta text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <a href="ElshaKwee_Resume.pdf" class="outline-btn" target="_blank">My Resume</a>
+
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+		<!-- ==========================
+        CUSTOM SPACER END
+        =========================== -->		
+		
+		<!-- ==========================
+        CONTACT SECTION
+        =========================== -->
+        <section class="text-center section-padding contact-wrap" id="contact">
+		  <!-- To Top Button -->
+          <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Drop <span>me</span> a line</h1>
+              </div>
+            </div>
+            <div class="row contact-details">
+			  <!-- Linkedin Box -->
+              <div class="col-md-6">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-linkedin"></i><span>LinkedIn</span></h2>
+                  <p><a href="https://www.linkedin.com/in/elshakwee/">elshakwee</a></p>
+                </div>
+              </div>
+			  <!-- E-Mail Box -->
+              <div class="col-md-6">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+                  <p><a href="index.html#">elsha@genesiaventures.com</a></p>
+                </div>
+              </div>
+            </div>
+			<div class="row">
+		<!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <!-- Social Buttons - use font-awesome -->
+                <ul class="social-buttons">
+                    <li><a href="https://github.com/elshaek" target="_blank" class="social-btn"><i class="fa fa-github"></i></a></li><!-- github -->
+                    <li><a href="https://www.linkedin.com/in/elshakwee/" target="_blank" class="social-btn"><i class="fa fa-linkedin"></i></a></li><!-- linkedin -->
+                    <li><a href="https://www.facebook.com/elsha" target="_blank" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
+                </ul>
+                <br>
+              </div>
+            </div>
+          </div>
+        </footer>
+		<!-- ==========================
+        FOOTER SECTION END
+        =========================== -->	
+		
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- SmoothScroll -->           
+    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/waypoints.min.js"></script>
+    <!-- classie.js -->
+	<script src="js/classie.js"></script>
+    <!-- FlexSlider -->
+    <script src="assets/flexslider/jquery.flexslider.js"></script>
+	<!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+	<!-- Text Rotator -->
+	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+	<!-- Lightbox.js -->
+    <script src="assets/lightbox/js/lightbox.min.js"></script>
+	<!-- Theme JavaScript Core -->
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
 
-    <!-- Image Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-          <img class="rounded" src="my_dogs.jpg" alt="my two dogs"/>
-        </div>
-      </div>
-    </div>
-
-    <img id="myImg" src="transparent_cartoony_me.png" alt="Cartoony Me">
-
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  </body>
-</body>
+	<!-- TEXT ROTATOR SETTINGS -->
+    <script type="text/javascript">
+    $(".rotate").textrotator({
+      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+      speed: 1800 // How many milliseconds until the next word show.
+    });
+    </script>
+	
+    </body>
 </html>
