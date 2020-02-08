@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ptty Project</title>
+    <!-- styling -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code:light,regular,medium,semi-bold,bold">
+    <link href="css/ptty.css" rel="stylesheet">
+</head>
+<body>
+    <div id="terminal"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/ptty.jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        var $ptty = $('#terminal').Ptty();
+    });
+    </script>
+</body>
+</html>
