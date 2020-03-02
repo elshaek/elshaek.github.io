@@ -324,24 +324,6 @@
                         '<i>help command-name</i> to show <i>command-name</i>\'s help.'+
                         '<i>help -a</i> or <i>help --all</i> to display all help.'
                 });
-
-                // $ptty.register('command', {
-                //   name : 'response',
-                //   method : function(cmd){
-                //       // Get the arguments 
-                //       var last = $ptty.get_command_option('last');
-                //       var args = last.split(' ');
-                //       // Remove the command name
-                //       args.shift();
-                //       try {
-                //           cmd = JSON.parse(args.join(' '));
-                //       } catch (e) {
-                //           cmd = {out : 'Usage: response {"out" : "This is the output"}'};
-                //       }
-                //       return cmd;
-                //   },
-                //   help: 'Will output the desired command options.'
-                // });
             };
 
             /**
