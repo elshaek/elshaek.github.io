@@ -5,7 +5,7 @@
     <title>Ptty Project</title>
     <!-- styling -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code:light,regular,medium,semi-bold,bold">
-    <link href="css/ptty.css" rel="stylesheet">
+    <!-- <link href="css/ptty.css" rel="stylesheet"> -->
 </head>
 <body>
     <div id="terminal"></div>
@@ -13,7 +13,44 @@
     <script src="js/ptty.jquery.js"></script>
     <script>
     $(document).ready(function(){
-        var $ptty = $('#terminal').Ptty();
+      var $ptty = $('#terminal').Ptty();
+
+      $ptty.register('command', {
+        name: 'hello',
+        method: function(cmd){
+            cmd.out = "Hello world!";
+            return cmd;
+        },
+        options: [],
+        help: 'A command to say hi.'
+      });
+
+      var cmd_eth_idr = {
+        name : 'eth_idr',
+        method : 'https://indodax.com/api/tickers',
+        help : 'Get the current price of 1 ether in IDR (source: Indodax)'
+      };
+      $ptty.register('command', cmd_eth_idr);
+
+      var cbk_eth_idr = {
+        name : 'eth_idr',
+        method : function(cmd){
+          if(cmd.tickers.eth_idr.last){
+            ethPrice = cmd.tickers.eth_idr.last
+            formattedEthPrice = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(ethPrice);
+
+            $ptty.echo(formattedEthPrice);
+          }
+          // $ptty.change_settings({
+          //   ajax_options : {
+          //       dataType : 'json'
+          //   }
+          // });
+          return cmd;
+        }
+      };
+      $ptty.register('callback', cbk_eth_idr);
+
     });
     </script>
 </body>
