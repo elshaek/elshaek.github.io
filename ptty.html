@@ -5,7 +5,7 @@
     <title>Ptty Project</title>
     <!-- styling -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Code:light,regular,medium,semi-bold,bold">
-    <!-- <link href="css/ptty.css" rel="stylesheet"> -->
+    <link href="css/ptty.css" rel="stylesheet">
 </head>
 <body>
     <div id="terminal"></div>
@@ -28,7 +28,7 @@
       var cmd_eth_idr = {
         name : 'eth_idr',
         method : 'https://indodax.com/api/tickers',
-        help : 'Get the current price of 1 ether in IDR (source: Indodax)'
+        help : 'Get the current price of 1 ether in IDR (source: <a href="https://indodax.com/market/ETHIDR" target=_blank>Indodax</a>)'
       };
       $ptty.register('command', cmd_eth_idr);
 
@@ -39,7 +39,7 @@
             ethPrice = cmd.tickers.eth_idr.last
             formattedEthPrice = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(ethPrice);
 
-            $ptty.echo(formattedEthPrice);
+            $ptty.echo(formattedEthPrice + ' (source: <a href="https://indodax.com/market/ETHIDR" target=_blank>Indodax</a>)');
           }
           // $ptty.change_settings({
           //   ajax_options : {
