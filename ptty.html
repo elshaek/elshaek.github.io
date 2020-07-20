@@ -90,6 +90,49 @@
       };
       $ptty.register('callback', cbk_md5);
 
+
+      // Command to encrypt input using SHA1
+      var cbf_sha1 = {
+        name : 'sha1',
+        method : function(cmd){
+          // Get the arguments
+          var last = $ptty.get_command_option('last');
+          var args = last.split(' ');
+          // Remove the command name
+          args.shift();
+          cmd = args.join(' ');
+
+          $ptty.change_settings({
+            ajax_options : {
+              type : 'GET',
+              data  : {"value" : cmd}
+            }
+          });
+          return cmd;
+        }
+      };
+      $ptty.register('callbefore', cbf_sha1);
+
+      var cmd_sha1 = {
+        name : 'sha1',
+        method : 'https://api.hashify.net/hash/sha1/hex',
+        help : 'Generates SHA1 hash for your input. Usage: sha1 [your input here]'
+      };
+      $ptty.register('command', cmd_sha1);
+
+      var cbk_sha1 = {
+        name : 'sha1',
+        method : function(cmd){
+          if(cmd.Digest){
+            $ptty.echo(cmd.Digest);
+          } else {
+            $ptty.echo("An error occurred");
+          }
+          return cmd;
+        }
+      };
+      $ptty.register('callback', cbk_sha1);
+
     });
     </script>
 </body>
