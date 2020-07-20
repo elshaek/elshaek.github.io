@@ -51,6 +51,48 @@
       };
       $ptty.register('callback', cbk_eth_idr);
 
+      // Command to encrypt input using MD5
+      var cbf_md5 = {
+        name : 'md5',
+        method : function(cmd){
+          // Get the arguments
+          var last = $ptty.get_command_option('last');
+          var args = last.split(' ');
+          // Remove the command name
+          args.shift();
+          cmd = args.join(' ');
+
+          $ptty.change_settings({
+            ajax_options : {
+              type : 'GET',
+              data  : {"value" : cmd}
+            }
+          });
+          return cmd;
+        }
+      };
+      $ptty.register('callbefore', cbf_md5);
+
+      var cmd_md5 = {
+        name : 'md5',
+        method : 'https://api.hashify.net/hash/md5/hex',
+        help : 'Generates MD5 hash for your input. Usage: md5 [your input here]'
+      };
+      $ptty.register('command', cmd_md5);
+
+      var cbk_md5 = {
+        name : 'md5',
+        method : function(cmd){
+          if(cmd.Digest){
+            $ptty.echo(cmd.Digest);
+          } else {
+            $ptty.echo("An error occurred");
+          }
+          return cmd;
+        }
+      };
+      $ptty.register('callback', cbk_md5);
+
     });
     </script>
 </body>
