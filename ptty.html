@@ -28,7 +28,7 @@
       // Command to get eth_idr price
       var cmd_eth_idr = {
         name : 'eth_idr',
-        method : 'https://indodax.com/api/tickers',
+        method : 'https://indodax.com/api/eth_idr/ticker',
         help : 'Get the current price of 1 ether in IDR (source: <a href="https://indodax.com/market/ETHIDR" target=_blank>Indodax</a>)'
       };
       $ptty.register('command', cmd_eth_idr);
@@ -36,8 +36,8 @@
       var cbk_eth_idr = {
         name : 'eth_idr',
         method : function(cmd){
-          if(cmd.tickers.eth_idr.last){
-            ethPrice = cmd.tickers.eth_idr.last
+          if(cmd.ticker.last){
+            ethPrice = cmd.ticker.last
             formattedEthPrice = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(ethPrice);
 
             $ptty.echo(formattedEthPrice + ' (source: <a href="https://indodax.com/market/ETHIDR" target=_blank>Indodax</a>)');
