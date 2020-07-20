@@ -25,6 +25,7 @@
         help: 'A command to say hi.'
       });
 
+      // Command to get eth_idr price
       var cmd_eth_idr = {
         name : 'eth_idr',
         method : 'https://indodax.com/api/tickers',
@@ -41,11 +42,7 @@
 
             $ptty.echo(formattedEthPrice + ' (source: <a href="https://indodax.com/market/ETHIDR" target=_blank>Indodax</a>)');
           }
-          // $ptty.change_settings({
-          //   ajax_options : {
-          //       dataType : 'json'
-          //   }
-          // });
+
           return cmd;
         }
       };
